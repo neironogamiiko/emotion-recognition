@@ -3,7 +3,6 @@ import logging; import sys
 import torch
 from torch import nn, optim
 from torch.utils.data import DataLoader, Dataset, WeightedRandomSampler
-from torchvision import datasets, transforms
 import cv2; import random
 import UtilityForModel as ufm
 from tqdm.auto import tqdm
@@ -49,11 +48,6 @@ class Data(Dataset):
 
         self.samples = []
 
-        # for sample in self.classes:
-        #     sample_path = self.path / sample
-        #     for image_path in sample_path.glob("*.png"):
-        #         self.samples.append((image_path, self.class_to_idx[sample]))
-
         for sample in self.classes:
             sample_path = self.path / sample
             images = list(sample_path.glob("*.png"))
@@ -64,13 +58,15 @@ class Data(Dataset):
 
     def __getitem__(self, i):
         image_path, label = self.samples[i]
-        image = cv2.imread(str(image_path), cv2.IMREAD_GRAYSCALE)
+        image = cv2.imread(str(image_path), cv2.IMREAD_COLOR)
+        image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+        image = cv2.resize(image, (96, 96))
         image = image.astype('float32') / 255.0
 
         if self.augment:
             image = self._augment(image)
 
-        image = torch.tensor(image).unsqueeze(0)
+        image = torch.tensor(image).permute(2, 0, 1)
 
         return image, label
 
@@ -114,8 +110,8 @@ test_loader = DataLoader(test_data,
 ufm.show_random_sample(train_data)
 ufm.show_random_sample(test_data)
 for images, labels in train_loader:
-    print(images.shape)  # [batch_size, 3, 48, 48]
-    print(labels.shape)  # [batch_size]
+    print(images.shape)
+    print(labels.shape)
     break
 
 
@@ -123,7 +119,7 @@ class ClassificationModel(nn.Module):
     def __init__(self):
         super().__init__()
         self.features = nn.Sequential(
-            nn.Conv2d(1, 16, kernel_size=3, padding=1),
+            nn.Conv2d(3, 16, kernel_size=3, padding=1),
             nn.ReLU(),
             nn.BatchNorm2d(16),
             nn.MaxPool2d(2),
