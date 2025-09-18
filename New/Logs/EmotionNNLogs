@@ -1,0 +1,161 @@
+2025-09-18 16:29:27,563 | INFO | Current device: cuda
+2025-09-18 16:29:27,643 | INFO | Test samples per class: {'anger': 1718, 'contempt': 1312, 'fear': 1664, 'happy': 2704, 'ahegao': 241, 'disgust': 1248, 'surprise': 1920, 'neutral': 2368, 'sad': 1584}
+2025-09-18 16:29:27,659 | INFO | Train samples per class: {'anger': 1500, 'contempt': 1559, 'fear': 1512, 'happy': 2340, 'ahegao': 964, 'disgust': 1229, 'surprise': 2119, 'neutral': 2758, 'sad': 3091}
+2025-09-18 16:29:27,686 | INFO | train_data.classes: ['ahegao', 'anger', 'contempt', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']
+2025-09-18 16:29:27,686 | INFO | first 10 sample labels: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-09-18 16:29:28,479 | INFO | 
+
+2025-09-18 16:29:28,480 | INFO | Epoch: 0
+2025-09-18 16:29:32,873 | INFO | Train loss: 1.1140 | Train accuracy: 61.86%
+2025-09-18 16:29:36,520 | INFO | Test loss: 1.4924 | Test accuracy: 49.07%
+2025-09-18 16:29:36,522 | INFO | Epoch: 1
+2025-09-18 16:29:40,339 | INFO | Train loss: 0.9469 | Train accuracy: 66.93%
+2025-09-18 16:29:43,383 | INFO | Test loss: 1.4532 | Test accuracy: 50.66%
+2025-09-18 16:29:43,384 | INFO | Epoch: 2
+2025-09-18 16:29:47,681 | INFO | Train loss: 0.9175 | Train accuracy: 68.97%
+2025-09-18 16:29:50,721 | INFO | Test loss: 1.4701 | Test accuracy: 49.12%
+2025-09-18 16:29:50,723 | INFO | Epoch: 3
+2025-09-18 16:29:54,471 | INFO | Train loss: 0.9081 | Train accuracy: 69.76%
+2025-09-18 16:29:57,507 | INFO | Test loss: 1.4968 | Test accuracy: 48.78%
+2025-09-18 16:29:57,509 | INFO | Epoch: 4
+2025-09-18 16:30:01,257 | INFO | Train loss: 0.9012 | Train accuracy: 71.33%
+2025-09-18 16:30:04,284 | INFO | Test loss: 1.4554 | Test accuracy: 48.41%
+2025-09-18 16:30:04,286 | INFO | Epoch: 5
+2025-09-18 16:30:08,029 | INFO | Train loss: 0.8528 | Train accuracy: 77.08%
+2025-09-18 16:30:11,480 | INFO | Test loss: 1.3488 | Test accuracy: 66.22%
+2025-09-18 16:30:11,481 | INFO | Epoch: 6
+2025-09-18 16:30:15,257 | INFO | Train loss: 0.7778 | Train accuracy: 83.83%
+2025-09-18 16:30:18,696 | INFO | Test loss: 1.2931 | Test accuracy: 69.21%
+2025-09-18 16:30:18,698 | INFO | Epoch: 7
+2025-09-18 16:30:22,843 | INFO | Train loss: 0.7456 | Train accuracy: 86.22%
+2025-09-18 16:30:25,867 | INFO | Test loss: 1.2396 | Test accuracy: 73.40%
+2025-09-18 16:30:25,868 | INFO | Epoch: 8
+2025-09-18 16:30:30,028 | INFO | Train loss: 0.6992 | Train accuracy: 88.45%
+2025-09-18 16:30:33,182 | INFO | Test loss: 1.1988 | Test accuracy: 73.63%
+2025-09-18 16:30:33,184 | INFO | Epoch: 9
+2025-09-18 16:30:37,582 | INFO | Train loss: 0.6879 | Train accuracy: 89.29%
+2025-09-18 16:30:41,582 | INFO | Test loss: 1.2657 | Test accuracy: 69.16%
+2025-09-18 16:30:41,584 | INFO | Epoch: 10
+2025-09-18 16:30:46,014 | INFO | Train loss: 0.7088 | Train accuracy: 87.94%
+2025-09-18 16:30:49,749 | INFO | Test loss: 1.2592 | Test accuracy: 74.36%
+2025-09-18 16:30:49,751 | INFO | Epoch: 11
+2025-09-18 16:30:54,513 | INFO | Train loss: 0.6691 | Train accuracy: 90.03%
+2025-09-18 16:30:57,916 | INFO | Test loss: 1.1792 | Test accuracy: 75.88%
+2025-09-18 16:30:57,918 | INFO | Epoch: 12
+2025-09-18 16:31:02,659 | INFO | Train loss: 0.6402 | Train accuracy: 92.18%
+2025-09-18 16:31:06,372 | INFO | Test loss: 1.1571 | Test accuracy: 77.84%
+2025-09-18 16:31:06,374 | INFO | Epoch: 13
+2025-09-18 16:31:10,742 | INFO | Train loss: 0.6213 | Train accuracy: 93.16%
+2025-09-18 16:31:14,698 | INFO | Test loss: 1.2143 | Test accuracy: 76.27%
+2025-09-18 16:31:14,700 | INFO | Epoch: 14
+2025-09-18 16:31:18,996 | INFO | Train loss: 0.6141 | Train accuracy: 93.58%
+2025-09-18 16:31:22,774 | INFO | Test loss: 1.2207 | Test accuracy: 76.11%
+2025-09-18 16:31:22,776 | INFO | Epoch: 15
+2025-09-18 16:31:27,510 | INFO | Train loss: 0.6123 | Train accuracy: 93.53%
+2025-09-18 16:31:30,885 | INFO | Test loss: 1.1778 | Test accuracy: 77.91%
+2025-09-18 16:31:30,887 | INFO | Epoch: 16
+2025-09-18 16:31:35,634 | INFO | Train loss: 0.6004 | Train accuracy: 94.39%
+2025-09-18 16:31:39,239 | INFO | Test loss: 1.1344 | Test accuracy: 78.82%
+2025-09-18 16:31:39,241 | INFO | Epoch: 17
+2025-09-18 16:31:43,745 | INFO | Train loss: 0.6027 | Train accuracy: 94.10%
+2025-09-18 16:31:47,713 | INFO | Test loss: 1.1330 | Test accuracy: 78.14%
+2025-09-18 16:31:47,715 | INFO | Epoch: 18
+2025-09-18 16:31:51,924 | INFO | Train loss: 0.5946 | Train accuracy: 94.83%
+2025-09-18 16:31:55,814 | INFO | Test loss: 1.1820 | Test accuracy: 77.48%
+2025-09-18 16:31:55,816 | INFO | Epoch: 19
+2025-09-18 16:32:00,441 | INFO | Train loss: 0.5982 | Train accuracy: 94.24%
+2025-09-18 16:32:03,910 | INFO | Test loss: 1.1213 | Test accuracy: 78.90%
+2025-09-18 16:32:03,912 | INFO | Epoch: 20
+2025-09-18 16:32:08,716 | INFO | Train loss: 0.6174 | Train accuracy: 93.53%
+2025-09-18 16:32:12,206 | INFO | Test loss: 1.1360 | Test accuracy: 79.58%
+2025-09-18 16:32:12,208 | INFO | Epoch: 21
+2025-09-18 16:32:16,769 | INFO | Train loss: 0.5850 | Train accuracy: 94.88%
+2025-09-18 16:32:20,648 | INFO | Test loss: 1.1719 | Test accuracy: 78.49%
+2025-09-18 16:32:20,650 | INFO | Epoch: 22
+2025-09-18 16:32:24,770 | INFO | Train loss: 0.5790 | Train accuracy: 95.47%
+2025-09-18 16:32:28,719 | INFO | Test loss: 1.1160 | Test accuracy: 79.84%
+2025-09-18 16:32:28,720 | INFO | Epoch: 23
+2025-09-18 16:32:33,203 | INFO | Train loss: 0.5777 | Train accuracy: 95.57%
+2025-09-18 16:32:36,812 | INFO | Test loss: 1.1307 | Test accuracy: 79.91%
+2025-09-18 16:32:36,813 | INFO | Epoch: 24
+2025-09-18 16:32:41,542 | INFO | Train loss: 0.5728 | Train accuracy: 95.69%
+2025-09-18 16:32:44,960 | INFO | Test loss: 1.1122 | Test accuracy: 79.25%
+2025-09-18 16:32:44,962 | INFO | Epoch: 25
+2025-09-18 16:32:49,690 | INFO | Train loss: 0.5756 | Train accuracy: 95.74%
+2025-09-18 16:32:53,460 | INFO | Test loss: 1.0993 | Test accuracy: 79.76%
+2025-09-18 16:32:53,462 | INFO | Epoch: 26
+2025-09-18 16:32:57,750 | INFO | Train loss: 0.5664 | Train accuracy: 96.17%
+2025-09-18 16:33:01,685 | INFO | Test loss: 1.1672 | Test accuracy: 79.32%
+2025-09-18 16:33:01,687 | INFO | Epoch: 27
+2025-09-18 16:33:06,067 | INFO | Train loss: 0.5734 | Train accuracy: 95.64%
+2025-09-18 16:33:09,784 | INFO | Test loss: 1.1792 | Test accuracy: 78.32%
+2025-09-18 16:33:09,786 | INFO | Epoch: 28
+2025-09-18 16:33:14,520 | INFO | Train loss: 0.5513 | Train accuracy: 96.94%
+2025-09-18 16:33:17,894 | INFO | Test loss: 1.1240 | Test accuracy: 79.38%
+2025-09-18 16:33:17,896 | INFO | Epoch: 29
+2025-09-18 16:33:22,632 | INFO | Train loss: 0.5469 | Train accuracy: 96.98%
+2025-09-18 16:33:26,308 | INFO | Test loss: 1.1186 | Test accuracy: 80.41%
+2025-09-18 16:33:26,310 | INFO | Epoch: 30
+2025-09-18 16:33:30,735 | INFO | Train loss: 0.5431 | Train accuracy: 97.26%
+2025-09-18 16:33:34,713 | INFO | Test loss: 1.1167 | Test accuracy: 80.59%
+2025-09-18 16:33:34,714 | INFO | Epoch: 31
+2025-09-18 16:33:38,974 | INFO | Train loss: 0.5450 | Train accuracy: 97.26%
+2025-09-18 16:33:42,785 | INFO | Test loss: 1.1194 | Test accuracy: 79.94%
+2025-09-18 16:33:42,787 | INFO | Epoch: 32
+2025-09-18 16:33:47,512 | INFO | Train loss: 0.5374 | Train accuracy: 97.53%
+2025-09-18 16:33:50,914 | INFO | Test loss: 1.1265 | Test accuracy: 80.90%
+2025-09-18 16:33:50,916 | INFO | Epoch: 33
+2025-09-18 16:33:55,655 | INFO | Train loss: 0.5402 | Train accuracy: 97.31%
+2025-09-18 16:33:59,237 | INFO | Test loss: 1.1096 | Test accuracy: 80.69%
+2025-09-18 16:33:59,239 | INFO | Epoch: 34
+2025-09-18 16:34:03,752 | INFO | Train loss: 0.5412 | Train accuracy: 97.23%
+2025-09-18 16:34:07,701 | INFO | Test loss: 1.1099 | Test accuracy: 80.44%
+2025-09-18 16:34:07,702 | INFO | Epoch: 35
+2025-09-18 16:34:11,830 | INFO | Train loss: 0.5332 | Train accuracy: 97.87%
+2025-09-18 16:34:15,749 | INFO | Test loss: 1.1423 | Test accuracy: 80.39%
+2025-09-18 16:34:15,751 | INFO | Epoch: 36
+2025-09-18 16:34:20,341 | INFO | Train loss: 0.5331 | Train accuracy: 97.84%
+2025-09-18 16:34:23,856 | INFO | Test loss: 1.1156 | Test accuracy: 80.52%
+2025-09-18 16:34:23,857 | INFO | Epoch: 37
+2025-09-18 16:34:28,589 | INFO | Train loss: 0.5282 | Train accuracy: 98.04%
+2025-09-18 16:34:32,036 | INFO | Test loss: 1.1145 | Test accuracy: 80.70%
+2025-09-18 16:34:32,038 | INFO | Epoch: 38
+2025-09-18 16:34:36,682 | INFO | Train loss: 0.5279 | Train accuracy: 98.09%
+2025-09-18 16:34:40,516 | INFO | Test loss: 1.1125 | Test accuracy: 81.02%
+2025-09-18 16:34:40,518 | INFO | Epoch: 39
+2025-09-18 16:34:44,710 | INFO | Train loss: 0.5214 | Train accuracy: 98.18%
+2025-09-18 16:34:48,665 | INFO | Test loss: 1.1210 | Test accuracy: 80.80%
+2025-09-18 16:34:48,667 | INFO | Epoch: 40
+2025-09-18 16:34:53,103 | INFO | Train loss: 0.5235 | Train accuracy: 98.14%
+2025-09-18 16:34:56,744 | INFO | Test loss: 1.1332 | Test accuracy: 80.75%
+2025-09-18 16:34:56,746 | INFO | Epoch: 41
+2025-09-18 16:35:01,476 | INFO | Train loss: 0.5213 | Train accuracy: 98.50%
+2025-09-18 16:35:04,862 | INFO | Test loss: 1.1346 | Test accuracy: 80.59%
+2025-09-18 16:35:04,864 | INFO | Epoch: 42
+2025-09-18 16:35:09,604 | INFO | Train loss: 0.5212 | Train accuracy: 98.40%
+2025-09-18 16:35:13,367 | INFO | Test loss: 1.1289 | Test accuracy: 80.69%
+2025-09-18 16:35:13,369 | INFO | Epoch: 43
+2025-09-18 16:35:17,709 | INFO | Train loss: 0.5144 | Train accuracy: 98.85%
+2025-09-18 16:35:21,654 | INFO | Test loss: 1.1136 | Test accuracy: 80.99%
+2025-09-18 16:35:21,656 | INFO | Epoch: 44
+2025-09-18 16:35:25,963 | INFO | Train loss: 0.5156 | Train accuracy: 98.65%
+2025-09-18 16:35:29,723 | INFO | Test loss: 1.1198 | Test accuracy: 80.80%
+2025-09-18 16:35:29,724 | INFO | Epoch: 45
+2025-09-18 16:35:34,456 | INFO | Train loss: 0.5168 | Train accuracy: 98.67%
+2025-09-18 16:35:37,829 | INFO | Test loss: 1.1305 | Test accuracy: 80.69%
+2025-09-18 16:35:37,830 | INFO | Epoch: 46
+2025-09-18 16:35:42,559 | INFO | Train loss: 0.5167 | Train accuracy: 98.50%
+2025-09-18 16:35:46,165 | INFO | Test loss: 1.1243 | Test accuracy: 80.87%
+2025-09-18 16:35:46,167 | INFO | Epoch: 47
+2025-09-18 16:35:50,626 | INFO | Train loss: 0.5123 | Train accuracy: 98.95%
+2025-09-18 16:35:54,581 | INFO | Test loss: 1.1293 | Test accuracy: 80.87%
+2025-09-18 16:35:54,582 | INFO | Epoch: 48
+2025-09-18 16:35:58,709 | INFO | Train loss: 0.5100 | Train accuracy: 98.94%
+2025-09-18 16:36:02,590 | INFO | Test loss: 1.1240 | Test accuracy: 80.94%
+2025-09-18 16:36:02,591 | INFO | Epoch: 49
+2025-09-18 16:36:07,128 | INFO | Train loss: 0.5093 | Train accuracy: 99.07%
+2025-09-18 16:36:10,646 | INFO | Test loss: 1.1257 | Test accuracy: 81.02%
+2025-09-18 16:36:10,648 | INFO | 
+
+2025-09-18 16:36:10,648 | INFO | Train time on cuda: 402.169 seconds
+2025-09-18 16:36:10,652 | INFO | Model and metadata saved to /home/frasero/PycharmProjects/Models/EmotionNN(state_dict).pth
