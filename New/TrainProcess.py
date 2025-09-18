@@ -152,4 +152,4 @@ checkpoint = {
     "model_state": model.state_dict(),
 }
 torch.save(checkpoint, FULL_PATH)
-logging.info(f"Model and metadata saved to {FULL_PATH}")
+logging.info(f"Model state dict saved to {FULL_PATH}")
