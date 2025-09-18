@@ -8,13 +8,13 @@ import UtilityForModel as ufm
 from tqdm.auto import tqdm
 
 logging.captureWarnings(True)
-Path("logs").mkdir(parents=True, exist_ok=True)
+Path("../logs").mkdir(parents=True, exist_ok=True)
 logging.basicConfig(
     level=logging.DEBUG,
     format="%(asctime)s | %(levelname)s | %(message)s",
     handlers=[
         logging.StreamHandler(),
-        logging.FileHandler("logs/EmotionDetectorLogs", "w")
+        logging.FileHandler("../logs/EmotionDetectorLogs", "w")
     ],
     force=True
 )
@@ -91,28 +91,28 @@ train_data = Data(path=TRAIN_PATH,
 test_data = Data(path=TEST_PATH,
                  augment=False)
 
-class_counts = [len([file for file in (TRAIN_PATH / n_classes).glob("*.png")]) for n_classes in train_data.classes]
-class_weights = 1. / torch.tensor(class_counts, dtype=torch.float)
-sample_weights = torch.tensor([class_weights[label] for _, label in train_data.samples])
-
-sampler = WeightedRandomSampler(weights=sample_weights,
-                                num_samples=len(sample_weights),
-                                replacement=True)
+# class_counts = [len([file for file in (TRAIN_PATH / n_classes).glob("*.png")]) for n_classes in train_data.classes]
+# class_weights = 1. / torch.tensor(class_counts, dtype=torch.float)
+# sample_weights = torch.tensor([class_weights[label] for _, label in train_data.samples])
+#
+# sampler = WeightedRandomSampler(weights=sample_weights,
+#                                 num_samples=len(sample_weights),
+#                                 replacement=True)
 
 train_loader = DataLoader(train_data,
                           batch_size=BATCH_SIZE,
-                          sampler=sampler)
+                          shuffle=True)
 
 test_loader = DataLoader(test_data,
                          batch_size=BATCH_SIZE,
                          shuffle=False)
 
-ufm.show_random_sample(train_data)
-ufm.show_random_sample(test_data)
-for images, labels in train_loader:
-    print(images.shape)
-    print(labels.shape)
-    break
+# ufm.show_random_sample(train_data)
+# ufm.show_random_sample(test_data)
+# for images, labels in train_loader:
+#     print(images.shape)
+#     print(labels.shape)
+#     break
 
 
 class ClassificationModel(nn.Module):
